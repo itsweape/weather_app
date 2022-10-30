@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/teal_200">
+
+    <!--city name-->
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Yogyakarta"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/broken_white"
+        android:textAlignment="center"/>
+
+    <!--date-->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="26 Oktober 2022"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/broken_white"
+        android:textAlignment="center"/>
+
+    <!--temperature-->
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="50dp"
+        android:text="21°C"
+        android:textColor="@color/broken_white"/>
+
+    <!--icon weather-->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cloud"/>
+
+    <!--deskripsi weather-->
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="Overcast Cloud"
+        android:textColor="@color/broken_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <!--humidity-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/broken_white"
+                android:textAlignment="center"/>
+
+            <!--pressure-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/broken_white"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <!--humidity-->
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="83"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="@color/broken_white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <!--pressure-->
+            <TextView
+                android:id="@+id/presure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1012"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="@color/broken_white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <!--temperature maksimal-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temp Max"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/broken_white"
+                android:textAlignment="center"/>
+
+            <!--temperature minimal-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temp Min"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/broken_white"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+            <!--temperature maksimal-->
+            <TextView
+                android:id="@+id/temp_maks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="28°C"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="@color/broken_white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <!--temperature minimal-->
+            <TextView
+                android:id="@+id/temp_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17°C"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:textColor="@color/broken_white"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--button arah secondactivity-->
+    <Button
+        android:id="@+id/findAnotherCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Another City"
+        android:textColor="@color/teal_200"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:backgroundTint="@color/broken_white" />
+
+</LinearLayout>

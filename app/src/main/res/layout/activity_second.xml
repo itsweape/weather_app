@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/teal_200">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/findweather"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check the Weather in Your City"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/broken_white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your city's name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/broken_white"
+        android:backgroundTint="@color/broken_white"
+        android:textColorHint="@color/broken_white"
+        android:padding="10dp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/broken_white"
+        android:onClick="findCityWeather"
+        android:padding="10dp"
+        android:text="Get Weather"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp" />
+
+</LinearLayout>
